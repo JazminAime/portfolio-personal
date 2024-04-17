@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300..700&family=Felipa&family=Lakki+Reddy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Original+Surfer&family=Redressed&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Felipa&family=Lakki+Reddy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Original+Surfer&family=Redressed&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -129,7 +131,7 @@ body {
 /* SECCION DE HABILIDADES */
 
 .secc-habilidades {
-    height: 950px;
+    height: 1050px;
     width: 100%;
     display: flex;
     background-color:#fbe7ee;
@@ -188,4 +190,42 @@ body {
     font-weight: bold;
     font-size: 20px;
     font-family: "Montserrat";
+}
+
+/* CITA */
+
+.seccion-cita {
+    height: 650px;
+    width: 100%;
+    background-color: #F2789F;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cita-img {
+    width: 200px;    
+    height: 200px;
+}
+
+.cont-cita {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.cita {
+    color: white;
+    font-family:'Redressed';
+    font-size: 40px;
+    font-weight: bold;
+    text-align:center;
+}
+
+.autor {
+    width: 200px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
 }
