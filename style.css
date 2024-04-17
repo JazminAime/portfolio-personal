@@ -53,8 +53,7 @@ body {
 }
 
 .link-nav:active {
-    /* border: 1px solid #F2789F; */
-    /* box-shadow: rgba(249, 153, 183, 0.35) 0px 5px 15px; */
+    border: 1px solid #F2789F;
     box-shadow: rgba(249, 153, 183, 0.25) 0px 54px 55px, rgba(249, 153, 183, 0.12) 0px -12px 30px, rgba(249, 153, 183, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -140,14 +139,14 @@ body {
     align-items: center;
 }
 
-.conocimientos {
+.mis {
     font-family: "Montserrat";
     font-weight: 900;
     font-size: 40px;
     margin-top: 130px;
 }
 
-.conocimientos-desc {
+.mis-desc {
     width: 350px;
     text-align: center;
     margin-top: 30px;
@@ -174,10 +173,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .img-ico:hover {
-    border: 1.5px solid #F2789F;
+    border: 1.8px solid #F2789F;
     color: #F2789F;
 }
 
@@ -229,3 +229,54 @@ body {
     color: white;
     font-weight: bold;
 }
+
+/* SECCION DE PROYECTOS */
+
+.seccion-proyectos {
+    height: 1700px;
+    width: 100%;
+    background-color:#fbe7ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    width: 80%;
+    height: 800px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+  
+.cont-pro {
+        width: 320px;
+        height: 330px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+        color: black; 
+}
+
+.img-pro {
+    width: 250px;
+    margin-top: 20px;
+}
+
+.proyecto {
+        font-size: 20px;
+        margin-top: 8px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.cont-pro:hover {
+    border: 1.8px solid #F2789F;
+    color: #F2789F;
+}
+
