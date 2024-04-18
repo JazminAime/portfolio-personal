@@ -86,7 +86,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 160px;
+    padding-left: 140px;
     height: 100%;
     width: 50%;
 }
@@ -245,11 +245,11 @@ body {
 
 .contenedor-proyectos {
     display: flex;
-    width: 80%;
+    width: 90%;
     height: 800px;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-left: 60px;
+    margin-left: 120px;
 }
 
 .cont-pro {
@@ -282,3 +282,19 @@ body {
     color: #F2789F;
 }
 
+/* SECCION FORMULARIO */
+/* 
+.formulario {
+    width: 100%;
+    height: 700px;
+    background-color: #fbe7ee;
+    display: flex;
+    justify-content: center;
+}
+
+.cont-form {
+    width: 80%;
+    height: 90%;
+    background-color: rgb(238, 226, 226);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+} */
