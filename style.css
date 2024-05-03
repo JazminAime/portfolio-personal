@@ -18,6 +18,11 @@ body {
 /* HEADER */
 
 .cont-navegacion {
+    position: fixed;
+    z-index: 10;
+    box-shadow: 6px 0px 10px 0px rgba(242, 120, 159, 0.75);
+    top: 0;
+    background-color: white;
     height: 100px;
     width: 100%;
 }
@@ -75,12 +80,11 @@ body {
 /* SECCION PRINCIPAL */
 
 .seccion-principal {
-    margin-top: 20px;
+    margin-top: 30px;
     height: 600px;
     width: 100%;
     display: flex;
     background-color: #fbf3f6;
-    box-shadow: 6px 0px 10px 0px rgba(242, 120, 159, 0.75);
 }
 
 .secc-contenedor {
@@ -92,8 +96,15 @@ body {
     width: 50%;
 }
 
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .img-principal {
-    flex: 1;
+    width: 450px;
+    margin-left: 80px;
 }
 
 .hello {
@@ -506,7 +517,6 @@ footer {
     border-radius: 50px;
     color: white;
     cursor: pointer;
-    /* border: 1px solid #dcd4d7; */
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); 
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
