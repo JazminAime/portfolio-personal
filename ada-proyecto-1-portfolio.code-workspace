@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ada-ejercicios/modulo-1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "modulo-1"
+	}
+}
