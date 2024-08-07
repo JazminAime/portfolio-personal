@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Como tu página esta en español, el atributo lang deberia ser "es" -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,14 +14,26 @@
         <header>
             <nav class="nav-bar" id="menu">
                 <div class="menu-bar">
-                    <a href="#menu" class="open"><img src="./images/open.svg" class="open-img"></a>
-                    <a href="#" class="close"><img src="./images/close.svg" class="close-img"></a>
+                    <a href="#menu" class="open">
+                        <img src="./images/open.svg" class="open-img">
+                    </a>
+                    <a href="#" class="close">
+                        <img src="./images/close.svg" class="close-img">
+                    </a>
                 </div>
                 <ul class="nav-bar-list">
-                    <li class="nav-bar-list-item"><a href="#hello" class="nav-bar-list-item-link">HOLA</a></li>
-                    <li class="nav-bar-list-item"><a href="#skills" class="nav-bar-list-item-link">CONOCIMIENTOS</a></li>
-                    <li class="nav-bar-list-item"><a href="#projects" class="nav-bar-list-item-link">PROYECTOS</a></li>
-                    <li class="nav-bar-list-item"><a href="#contact" class="nav-bar-list-item-link nav-contact">CONTACTO</a></li>
+                    <li class="nav-bar-list-item">
+                        <a href="#hello" class="nav-bar-list-item-link">HOLA</a>
+                    </li>
+                    <li class="nav-bar-list-item">
+                        <a href="#skills" class="nav-bar-list-item-link">CONOCIMIENTOS</a>
+                    </li>
+                    <li class="nav-bar-list-item">
+                        <a href="#projects" class="nav-bar-list-item-link">PROYECTOS</a>
+                    </li>
+                    <li class="nav-bar-list-item">
+                        <a href="#contact" class="nav-bar-list-item-link nav-contact">CONTACTO</a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -29,12 +42,14 @@
         <!-- SECCION DE PRESENTACION -->
         <section id="hello" class="section-presentation">
             <div class="presentation-container">
+                <!-- En vez de utilizar un <h3>, seria mejor un <p> o un <span> -->
                 <h3 class="presentation-hello">¡Hola! Soy</h3>
                 <h1 class="presentation-name">Jazmín Aimé</h1>
                 <p class="presentation-description">Desarrolladora, deportista y fan de la naturaleza</p>
                 <a href="#projects" class="button-primary">LO QUE HAGO</a>
             </div>
             <figure class="presentation-figure">
+                <!-- El espacio en el nombre del archivo genera un error de validación HTML -->
                 <img src="./images/messy bun-bro.png" alt="imagen-presentation" class="presentation-image">
             </figure>
         </section>
@@ -47,6 +62,7 @@
                 <p class="description-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates laboriosam consectetur veritatis labore.</p>
                 <div class="skills-container">
                     <div class="skills">
+                        <!-- Con el fin de hacer mas semántico el código podrias envolver al <img> en un <picture> o <figure> -->
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skills-image" alt="image-skill-html5"/>
                         <p class="skills-detail">HTML 5</p>
                     </div>
@@ -77,12 +93,14 @@
 
         <!-- CITA -->
         <section class="section-quote">
+            <!-- Con el fin de hacer mas semántico el código podrias envolver al <img> en un <picture> o <figure> -->
             <img src="./images/cite.png" class="quote-image" alt="image-quote">
             <blockquote class="quote">
                 <q class="quote-text">
                     En medio de tantas cosas que no son, ser uno mismo es iluminar el universo.
                 </q>  
             </blockquote>
+            <!-- El añidamiento del <p> dentro del <cite> genera error de validación -->
             <cite class="quote-author">
                 <p>zab g. andrade</p>
             </cite>
@@ -96,6 +114,7 @@
                 <p class="description-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates laboriosam consectetur veritatis labore.</p>
                 <div class="projects-container">
                     <a class="project-container-item" href="index.html" target="_blank">
+                            <!-- Con el fin de hacer mas semántico el código podrias envolver al <img> en un <picture> o <figure> -->
                             <img src="./images/protfolio.png" class="project-image" alt="image-project-portfolio">
                             <p class="project-description">Portfolio</p>
                         </a>
@@ -138,22 +157,26 @@
                         <li class="contact-list-item">
                             <a href="https://x.com/jazminncita0" target="_blank">
                                 <i class="fa fa-brands fa-twitter contact-img"></i>                           
-                                @jazminncita0</a>
+                                @jazminncita0
+                            </a>
                         </li>
                         <li class="contact-list-item">
                             <a href="https://github.com/JazminAime" target="_blank">
                                 <i class="fa fa-brands fa-github-alt contact-img"></i>
-                                JazminAime</a>
+                                JazminAime
+                            </a>
                         </li>
                         <li class="contact-list-item">
                             <a href="https://www.linkedin.com/in/jazm%C3%ADn-aim%C3%A9-59869b150/" target="_blank">
                                 <i class="fa fa-brands fa-linkedin contact-img"></i>
-                                Jazmín Aimé</a>
+                                Jazmín Aimé
+                            </a>
                         </li>
                         <li class="contact-list-item">
                             <a href="mailto:jazminfalcon@hotmail.com" target="_blank">
                                 <i class="fa fa-solid fa-envelope contact-img"></i>
-                                jazminfalcon@hotmail.com</a>
+                                jazminfalcon@hotmail.com
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -161,16 +184,16 @@
                     <h2>Escribime</h2>
                     <form action="#" method="get" enctype="application/x-www-form-urlencoded" class="
                     form-contact">
-                    <div class="form-name-container">
-                        <div class="form-name">
-                            <label for="name">Nombre *</label>
-                            <input type="text" name="name" id="name" placeholder="p.ej.: Ana" required>
+                        <div class="form-name-container">
+                            <div class="form-name">
+                                <label for="name">Nombre *</label>
+                                <input type="text" name="name" id="name" placeholder="p.ej.: Ana" required>
+                            </div>
+                            <div class="form-lastname">
+                                <label for="lastname">Apellido *</label>
+                                <input type="text" name="lastname" id="lastname" placeholder="p. ej.: Sanz" required>
+                            </div>
                         </div>
-                        <div class="form-lastname">
-                            <label for="lastname">Apellido *</label>
-                            <input type="text" name="lastname" id="lastname" placeholder="p. ej.: Sanz" required>
-                        </div>
-                    </div>
                         <div class="form-column">
                             <label for="email">Email *</label>
                             <input type="email" name="email" id="email" placeholder="p. ej.: ana.sanz@gmail.com" required>
